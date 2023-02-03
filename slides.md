@@ -45,16 +45,7 @@ css: unocss
 
 Tailwind is a utility first css framework which generates simple atomic classes to build layouts quickly without sacrificing _much_ customizability
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
-
-<br>
-<br>
+<img src="./assets/LibrariesSummarised.png" />
 
 Read more about [Why Slidev?](https://sli.dev/guide/why)
 
