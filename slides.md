@@ -49,7 +49,7 @@ Tailwind is a utility first css framework which generates simple atomic classes,
 
 <div class="flex justify-center">
   <div v-click class="text-left flex flex-col items-end">
-    <p class="w-128 me-2">
+    <p class="w-128 me-2 italic">
       If you can suppress the urge to retch long enough to give it a chance, I really think you’ll wonder how you ever worked with CSS any other way.
     </p>
     <Quote/>
@@ -62,6 +62,18 @@ Tailwind is a utility first css framework which generates simple atomic classes,
 
 That is an extreme example, but lets look at some issues with tailwind
 
+## Issues
+
 - Classlist gets long and hard to read
 - Hard to reuse code
--
+- Delivering too much CSS when app gets large
+
+<v-click>
+
+## Solutions
+
+- Use the `prettier` tailwind plugin, and use the `inline-fold` vscode extension
+- Build reusable react components
+- JIT Mode (Render only the CSS you need, only when you need it)
+
+</v-click>
