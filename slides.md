@@ -64,4 +64,34 @@ That is an extreme example, but lets look at some issues with tailwind
 
 - Classlist gets long and hard to read
 - Hard to reuse code
--
+
+--- #5
+
+# Keem's experience
+
+<br/>
+
+## Things I Loved
+
+1. James is Tailwind God and he bestowed his blessing upon us
+2. SPEED - instant gratification
+3. UTILITY - Padding, hover states, custom components
+
+<br/>
+
+## Things To Consider
+
+1. How much is too much?
+2. Still need css modules in speific cases - Layouts
+
+--- #6
+
+## Before
+
+<img src="accordionBefore.png" width="350" height="150">
+
+--- #7
+
+## After
+
+<img src="accordionAfter.png" width="850" height="550">
