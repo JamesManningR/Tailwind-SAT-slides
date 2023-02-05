@@ -1,9 +1,9 @@
 ---
+fonts:
+  sans: Open-Dyslexic
+  local: Open-Dyslexic
 # try also 'default' to start simple
-theme: default
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-background: https://images.unsplash.com/photo-1495401220594-550313c3046b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80
+theme: light-icons
 # apply any windi css classes to the current slide
 class: "text-center"
 # https://sli.dev/custom/highlighters.html
@@ -23,9 +23,19 @@ drawings:
 transition: fade-out
 # use UnoCSS
 css: unocss
+
+layout: intro
+image: https://images.unsplash.com/photo-1495401220594-550313c3046b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80
 ---
 
-# TailwindCss
+<div v-click class="mb-4 absolute bottom-4 left-12 text-left">
+  <span class="text-6xl text-primary-lighter text-opacity-80 font-medium" >
+    Utility first CSS
+  </span>
+  <div class="text-9xl text-white text-opacity-60 font-bold" >
+    TailwindCss
+  </div> 
+</div>
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -39,9 +49,28 @@ css: unocss
 
 Tailwind is a utility first css framework which generates simple atomic classes, so you can style apps quickly without sacrificing _much_ customizability
 
-<img src="/img/LibrariesSummarised.png" class="w-128" />
+<img v-click src="/img/LibrariesSummarised.png" class="w-128" />
 
---- #3
+---
+
+# What is tailwind
+
+With tailwind, insead of using semantic class names to style your markup,
+
+you use atomic class names which represent properties.
+
+<div class="grid grid-cols-2">
+  <div>
+    <p>So insead of this</p>
+    <img v-click class="h-80" src="/img/Non-TailwindCard.png" />
+  </div>
+  <div>
+    <p>You do this</p>
+    <img v-click src="/img/TailwindCard.png" />
+  </div>
+</div>
+
+---
 
 # Looking at this makes me feel ill
 
@@ -56,7 +85,7 @@ Tailwind is a utility first css framework which generates simple atomic classes,
   </div>
 </div>
 
---- #4
+---
 
 # Common issues with tailwind
 
@@ -73,12 +102,12 @@ That is an extreme example, but lets look at some issues with tailwind
 ## Solutions
 
 - Use the `prettier` tailwind plugin, and use the `inline-fold` vscode extension
-- Build reusable react components
+- Build reusable react `primitive` components
 - JIT Mode (Render only the CSS you need, only when you need it)
 
 </v-click>
 
---- #5
+---
 
 # Keem's experience
 
@@ -97,14 +126,14 @@ That is an extreme example, but lets look at some issues with tailwind
 1. How much is too much?
 2. Still need css modules in specific cases - Grid Area/Layouts
 
---- #6
+---
 
 ## Before
 
-<img src="accordionBefore.png" width="350" height="150">
+<img src="/img/accordionBefore.png" width="350" height="150">
 
---- #7
+---
 
 ## After
 
-<img src="accordionAfter.png" width="850" height="550">
+<img src="/img/accordionAfter.png" width="850" height="550">
